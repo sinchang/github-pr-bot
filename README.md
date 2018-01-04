@@ -15,7 +15,7 @@ git clone this repo and run `npm install`
 
 - [ali_ddns](https://github.com/JinLinGan/ali_ddns/pull/1)
 
-## Inspired
+## Inspiration
 
 [kentcdodds's tweet](https://twitter.com/kentcdodds/status/948610905373335552)
 

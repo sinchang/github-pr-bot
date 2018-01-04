@@ -77,7 +77,7 @@ const Bot = (owner, repo) => {
             return createPr(owner, repo, {
               title: 'remove codesponsor',
               head: githubId + ':master',
-              body: `auto send pull request by ${githubId} <https://github.com/${githubId}>`,
+              body: `Pull request automatically sent by ${githubId} <https://github.com/${githubId}>`,
               base
             })
           })
