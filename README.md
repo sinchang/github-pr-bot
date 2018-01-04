@@ -12,6 +12,7 @@ clone this repo and run `npm install`
 ## Case
 
 - [ali_ddns](https://github.com/JinLinGan/ali_ddns/pull/1)
+- [juice](https://github.com/njlr/juice/pull/1)
 
 ## Inspiration
 
