@@ -2,13 +2,11 @@
 
 ## Install
 
-```
-git clone this repo and run `npm install`
-```
+clone this repo and run `npm install`
 
 ## Usage
 
-- rename `example-config.js` to `config.js` and add you GitHub id and GitHub token
+- rename `example-config.js` to `config.js` and add GitHub id and GitHub token
 - run `npm start`
 
 ## Case
@@ -21,4 +19,4 @@ git clone this repo and run `npm install`
 
 ## Help
 
-need get all repo list with [url](https://github.com/search?l=Markdown&p=2&q=href%3D%27https%3A%2F%2Fapp.codesponsor.io%2Flink&type=Code&utf8=%E2%9C%93)
+Need help finding all the repo via [url](https://github.com/search?l=Markdown&p=2&q=href%3D%27https%3A%2F%2Fapp.codesponsor.io%2Flink&type=Code&utf8=%E2%9C%93)
