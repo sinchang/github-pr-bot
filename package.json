@@ -14,6 +14,7 @@
   "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.6.0",
     "axios": "^0.17.1",
     "base-64": "^0.1.0",
     "cheerio": "^1.0.0-rc.2",
