@@ -9,7 +9,7 @@ clone this repo and run `npm install`
 ## Usage
 
 - rename `example-config.js` to `config.js` and add GitHub id and GitHub token
-- run `npm start`
+- run `npm cli`
 
 ## Case
 
