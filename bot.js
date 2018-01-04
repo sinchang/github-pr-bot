@@ -2,10 +2,9 @@ const Bot = require('./app')
 const repos = require('./repos.json')
 const async = require('async')
 
-async.mapLimit(Object.keys(repos[0]), 2, async function(key) {
-  console.log(key)
-  const repo = key
-  const owner = repos[0][key]
+async.mapLimit(repos, 2, async function(item) {
+  const repo = item.repo
+  const owner = item.owner
   const response = await Bot(owner, repo)
   return response
 }, (err, results) => {
