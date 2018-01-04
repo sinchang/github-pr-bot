@@ -12,7 +12,9 @@
   "dependencies": {
     "axios": "^0.17.1",
     "base-64": "^0.1.0",
+    "cheerio": "^1.0.0-rc.2",
     "inquirer": "^4.0.2",
-    "log-update": "^2.3.0"
+    "log-update": "^2.3.0",
+    "sleep": "^5.1.1"
   }
 }
