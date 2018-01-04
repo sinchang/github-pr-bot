@@ -1,0 +1,18 @@
+{
+  "name": "github-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "keywords": [],
+  "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "base-64": "^0.1.0",
+    "inquirer": "^4.0.2",
+    "log-update": "^2.3.0"
+  }
+}
