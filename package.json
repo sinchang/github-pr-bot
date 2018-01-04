@@ -4,9 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node cli.js"
+    "cli": "node cli.js",
+    "start": "node bot.js"
   },
-  "keywords": [],
+  "keywords": [
+    "github",
+    "bot"
+  ],
   "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
   "license": "MIT",
   "dependencies": {

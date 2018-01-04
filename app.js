@@ -77,7 +77,7 @@ const Bot = (owner, repo) => {
             return createPr(owner, repo, {
               title: 'remove codesponsor',
               head: githubId + ':master',
-              body: `Pull request automatically sent by ${githubId} <https://github.com/${githubId}>`,
+              body: `Pull request automatically sent by ${githubId} <https://github.com/${githubId}>. Because Code Sponsor is shutting down on December 8`,
               base
             })
           })
