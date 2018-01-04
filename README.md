@@ -1,4 +1,6 @@
-# GitHub Pull Request Bot
+# GitHub Pull Request Bot 
+
+🤖 [@knewzen](https://github.com/knewzen)
 
 ## Install
 
