@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 const { token, githubId } = require('./config')
 
 const BASE_URL = 'https://api.github.com'
-const regex = /<a(.*)https:\/\/app.codesponsor.io\/link(.*)<\/a>/g
+const regex = /<a([\s\S]*)https:\/\/app.codesponsor.io\/link([\s\S]*)/g
 const accessToken = `token ${token}`
 
 function forkRepo(owner, githubId, repo) {
@@ -15,7 +15,8 @@ function forkRepo(owner, githubId, repo) {
       Authorization: accessToken
     },
     data: {
-      organization: githubId
+      // open if account is organization
+      // organization: githubId
     }
   }).then(res => Promise.resolve(res.data)).catch(err => Promise.reject(err))
 }
