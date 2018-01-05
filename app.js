@@ -1,10 +1,9 @@
 const axios = require('axios')
 const base64 = require('base-64')
-const cheerio = require('cheerio')
 const { token, githubId } = require('./config')
 
 const BASE_URL = 'https://api.github.com'
-const regex = /<a\starget=\'_blank\'\srel=\'nofollow\'\shref=\'https:\/\/app.codesponsor.io\/link([\s\S]*)<\/a>/g
+const regex = /<a\starget='_blank'\srel='nofollow'\shref='https:\/\/app.codesponsor.io\/link([\s\S]*)<\/a>/g
 const accessToken = `token ${token}`
 
 function forkRepo(owner, githubId, repo) {
@@ -57,9 +56,9 @@ function createPr(githubId, repo, params = {}) {
   }).then(res => Promise.resolve(res.data)).catch(err => Promise.reject(err))
 }
 
-const Bot = (owner, repo) => {
+const bot = (owner, repo) => {
   return forkRepo(owner, githubId, repo)
-    .then((forkRes) => {
+    .then(forkRes => {
       const base = forkRes.default_branch
       return getReadmeContent(githubId, repo)
         .then(readmeRes => {
@@ -74,7 +73,7 @@ const Bot = (owner, repo) => {
             message: 'remove codesponsor',
             sha,
             content: base64.encode(text)
-          }).then(contentRes => {
+          }).then(() => {
             return createPr(owner, repo, {
               title: 'remove codesponsor',
               head: githubId + ':' + base,
@@ -86,4 +85,4 @@ const Bot = (owner, repo) => {
     })
 }
 
-module.exports = Bot
+module.exports = bot

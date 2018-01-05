@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "cli": "node cli.js",
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "lint": "eslint *.js"
   },
   "keywords": [
     "github",
@@ -21,5 +22,10 @@
     "inquirer": "^4.0.2",
     "log-update": "^2.3.0",
     "sleep": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-rem": "^4.0.0",
+    "xo": "^0.18.2"
   }
 }
